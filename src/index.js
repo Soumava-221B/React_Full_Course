@@ -1,10 +1,25 @@
 import React from "react";
 import ReactDOM  from "react-dom";
+import ReactComponent  from "../src/ReactCompnent";
+import BookList from "./BookList";
 
-function Greeting(){
-  return <h4>this is shawn and this is my first component</h4>
-    
-  
+ // stateless function component
+ // always return JSX
+
+function Greeting() {
+  return (
+   <div>
+     <h1>Hello World</h1>
+     <ReactComponent />
+     <BookList />
+     <ul>
+       <li>
+         <a href='#'>Hello wrold</a>
+         <input type="text" name='' id=''/>
+       </li>
+     </ul>
+   </div>
+  );
 }
 
 
