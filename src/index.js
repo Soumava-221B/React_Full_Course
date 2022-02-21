@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM  from "react-dom";
-import ReactComponent  from "../src/ReactCompnent";
-import BookList from "./BookList";
+// import ReactComponent  from "../src/ReactCompnent";
+// import BookList from "./BookList";
+import BookList from "./BookList_1.0";
 
  // stateless function component
  // always return JSX
@@ -9,15 +10,14 @@ import BookList from "./BookList";
 function Greeting() {
   return (
    <div>
-     <h1>Hello World</h1>
-     <ReactComponent />
+     {/* <ReactComponent /> */}
      <BookList />
-     <ul>
+     {/* <ul>
        <li>
          <a href='#'>Hello wrold</a>
          <input type="text" name='' id=''/>
        </li>
-     </ul>
+     </ul> */}
    </div>
   );
 }
