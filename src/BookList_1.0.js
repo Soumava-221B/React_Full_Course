@@ -9,12 +9,15 @@ export default function BookList() {
   );
 }
 
-const Book = () => {            
+const Book = () => {    
+      const title = 'I Love You to the Moon and Back';
+      const author = 'Aesop';    
     return ( 
      <article className='book'>
      <img src="https://images-eu.ssl-images-amazon.com/images/I/819tTN23S3L._AC_UL116_SR116,116_.jpg" alt="Aesop Fables" />
-     <h1>Tittle = Aesop's Fables</h1>
-     <h4>Author = Aesop</h4>
+     <h1>{title}</h1>
+     <h4>{author.toUpperCase()}</h4>
+     <p>{6 + 6}</p>
     </article>
     );
 };
