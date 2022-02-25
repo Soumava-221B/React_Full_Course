@@ -3,7 +3,7 @@ import ReactDOM  from "react-dom";
 // import ReactComponent  from "../src/ReactCompnent";
 // import BookList from "./BookList";
 // import BookList from "./Props/Props_Children";
-import BookList from "./Lists/Simple_lists";
+import BookList from "./Lists/Proper_List";
 
  // stateless function component
  // always return JSX
