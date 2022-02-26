@@ -30,19 +30,27 @@ export default function BookList() {
     <div className="booklist">
       {books.map((book) => {
         console.log(book);
-        return <Book key={book.id} book={book}></Book>; // passing book as an object
+        return <Book key={book.id} {...book}></Book>; // passing book as an object
       })}
     </div>
   );
 }
 
-const Book = (props) => {
-  const { img, title, author } = props.book;
+const Book = ({ img, title, author }) => {
+  // attribute, eventHandler
+  // onClick, onMouseOver
+  const clickHandler = () => {
+    alert("Hello world");
+  };
+
   return (
     <article className="book">
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={clickHandler}>
+        reference example
+      </button>
     </article>
   );
 };
